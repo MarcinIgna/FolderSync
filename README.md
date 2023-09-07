@@ -21,7 +21,7 @@ To use this tool, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd project direcory
+   cd folder-synchronization
    ```
 
 3. Install the required dependencies from the `requirements.txt` file:
@@ -36,7 +36,9 @@ To use this tool, follow these steps:
    touch sync_log.txt
    ```
 
-5. Run the script with the following command:
+5. Ensure that both the source and replica folders exist before running the synchronization.
+
+6. Run the script with the following command:
 
    ```bash
    python sync_folders.py /path/to/source/folder /path/to/replica/folder <interval> /path/to/logfile.txt
@@ -47,7 +49,7 @@ To use this tool, follow these steps:
    - `<interval>`: The synchronization interval in seconds.
    - `/path/to/logfile.txt`: The path to the log file where synchronization details will be recorded.
 
-6. The script will run periodically, keeping the replica folder synchronized with the source folder.
+7. The script will run periodically, keeping the replica folder synchronized with the source folder.
 
 ## Requirements
 
